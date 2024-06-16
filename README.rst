@@ -23,12 +23,12 @@ Documentation: https://open-minds-lab.github.io/mrQA/
 
 ``mrQA`` is a tool developed for automatic evaluation of protocol compliance in MRI datasets. The tool analyzes MR acquisition data from DICOM headers and compares it against protocol to determine the level of compliance. It takes as input a dataset in DICOM/BIDS format. The tool outputs a compliance report in HTML format, with a percent compliance score for each sequence/modality in a dataset. The tool also outputs a JSON file with the compliance scores for each modality. In addition, it highlights any deviations from the protocol. The tool has been specifically created keeping in mind those who directly acquired the data such as MR Physicists and Technologists, but can be used by anyone who wants to evaluate that MR scans are acquired according to a pre-defined protocol and to minimize errors in acquisition process.
 
-``mrQA`` uses ``MRDataset`` to efficiently parse various neuroimaging dataset formats, which is available `here <github.com/Open-Minds-Lab/MRdataset>`_.
+``mrQA`` uses ``MRDataset`` to efficiently parse various neuroimaging dataset formats, which is available `here <https://github.com/Open-Minds-Lab/MRdataset>`_.
 
 Key features:
 
 - protocol compliance checks in key dimensions, both
-   - horizontal audit (within-sequence across-dataset), as well as 
+   - horizontal audit (within-sequence across-dataset), as well as
    - vertical audit (within-session across-sequence)
 - continuous monitoring of incoming data (hourly or daily on XNAT server or similar)
 - parallel processing of very large datasets (like ABCD or UK Biobank) on a HPC cluster
